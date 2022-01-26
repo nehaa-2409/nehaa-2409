@@ -1,0 +1,73 @@
+{
+  "suiteName": "Logs Alarms and Notifications",
+  "testBed": {},
+  "sets": [
+    {
+      "name": "Pay Shield Health Alarms - 9k",
+      "tests": [
+        "logsAlarmsAndNotifications.sets.payShieldAlarms.payShieldHealthAlarms.aTest_healthGatherDisabledAlarm"
+      ],
+      "configPath": "config.psm.standard.json",
+      "params": {
+        "auditor": "auditor_1",
+        "manager": "manager_1",
+        "group": "group_2",
+        "payshield_1": "SIM000000002",
+        "payshield_2": "SIM000000004"
+      }
+    },
+    {
+      "name": "Pay Shield Summary Alarms - 9k",
+      "tests": [
+        "logsAlarmsAndNotifications.sets.payShieldAlarms.payShieldSummaryAlarms.aTest_cryptAlgChangedAlarm"
+      ],
+      "configPath": "config.psm.standard.json",
+      "params": {
+        "auditor": "auditor_1",
+        "manager": "manager_1",
+        "group": "group_2",
+        "payshield": "SIM000000002"
+      }
+    },
+    {
+      "name": "Pay Shield Health Alarms - 10k",
+      "tests": [
+        "logsAlarmsAndNotifications.sets.payShieldAlarms.payShieldHealthAlarms.aTest_deviceStateAlarm"
+      ],
+      "configPath": "config.psm.standard.json",
+      "params": {
+        "auditor": "auditor_1",
+        "manager": "manager_1",
+        "group": "group_2",
+        "payshield_1": "SIM00000000A",
+        "payshield_2": "SIM00000000C"
+      }
+    },
+    {
+      "name": "Pay Shield Summary Alarms - 10k",
+      "tests": [
+        "logsAlarmsAndNotifications.sets.payShieldAlarms.payShieldSummaryAlarms.aTest_buildNumChangedAlarm"
+      ],
+      "configPath": "config.psm.standard.json",
+      "params": {
+        "auditor": "auditor_1",
+        "manager": "manager_1",
+        "group": "group_2",
+        "payshield": "SIM00000000A"
+      }
+    },
+    {
+      "name": "Miscellaneous Logs Alarms and Notifications",
+      "tests": [
+        "logsAlarmsAndNotifications.sets.miscLogsAlarmsAndNotifications.aTest_alarmAcknowledgement_admin"
+      ],
+      "configPath": "config.psm.evalLicense.json",
+      "params": {
+        "admin": "admin_1",
+        "manager": "manager_1",
+        "group": "group_2",
+        "payshield": "SIM0000000AA"
+      }
+    }
+  ]
+}
